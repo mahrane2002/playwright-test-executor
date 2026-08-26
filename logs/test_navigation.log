@@ -1,0 +1,48 @@
+2026-08-19 15:24:26,769 - INFO - Reading test case: tests/test_navigation.py
+2026-08-19 15:24:26,769 - INFO - Reading test case: tests/test_navigation.py
+2026-08-19 15:24:26,770 - INFO - Parsing Python source using AST
+2026-08-19 15:24:26,770 - INFO - Parsing Python source using AST
+2026-08-19 15:24:26,771 - INFO - JSON test case generated: output\test_navigation.json
+2026-08-19 15:24:26,771 - INFO - JSON test case generated: output\test_navigation.json
+2026-08-19 15:24:26,772 - INFO - Starting test case: test_navigation
+2026-08-19 15:24:26,772 - INFO - Starting test case: test_navigation
+2026-08-19 15:24:27,312 - INFO - Executing step 1: open_browser
+2026-08-19 15:24:27,312 - INFO - Executing step 1: open_browser
+2026-08-19 15:24:29,055 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:24:29,055 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:24:29,055 - INFO - Step 1 completed successfully
+2026-08-19 15:24:29,055 - INFO - Step 1 completed successfully
+2026-08-19 15:24:29,055 - INFO - Executing step 2: navigate
+2026-08-19 15:24:29,055 - INFO - Executing step 2: navigate
+2026-08-19 15:24:29,055 - INFO - Navigating to https://example.com
+2026-08-19 15:24:29,055 - INFO - Navigating to https://example.com
+2026-08-19 15:24:29,537 - INFO - Step 2 completed successfully
+2026-08-19 15:24:29,537 - INFO - Step 2 completed successfully
+2026-08-19 15:24:29,537 - INFO - Executing step 3: wait
+2026-08-19 15:24:29,537 - INFO - Executing step 3: wait
+2026-08-19 15:24:29,537 - INFO - Waiting 1000 ms
+2026-08-19 15:24:29,537 - INFO - Waiting 1000 ms
+2026-08-19 15:24:30,545 - INFO - Step 3 completed successfully
+2026-08-19 15:24:30,545 - INFO - Step 3 completed successfully
+2026-08-19 15:24:30,545 - INFO - Executing step 4: navigate
+2026-08-19 15:24:30,545 - INFO - Executing step 4: navigate
+2026-08-19 15:24:30,546 - INFO - Navigating to https://the-internet.herokuapp.com
+2026-08-19 15:24:30,546 - INFO - Navigating to https://the-internet.herokuapp.com
+2026-08-19 15:24:50,922 - INFO - Step 4 completed successfully
+2026-08-19 15:24:50,922 - INFO - Step 4 completed successfully
+2026-08-19 15:24:50,922 - INFO - Executing step 5: wait
+2026-08-19 15:24:50,922 - INFO - Executing step 5: wait
+2026-08-19 15:24:50,923 - INFO - Waiting 1000 ms
+2026-08-19 15:24:50,923 - INFO - Waiting 1000 ms
+2026-08-19 15:24:51,943 - INFO - Step 5 completed successfully
+2026-08-19 15:24:51,943 - INFO - Step 5 completed successfully
+2026-08-19 15:24:51,943 - INFO - Executing step 6: close_browser
+2026-08-19 15:24:51,943 - INFO - Executing step 6: close_browser
+2026-08-19 15:24:51,943 - INFO - Closing browser
+2026-08-19 15:24:51,943 - INFO - Closing browser
+2026-08-19 15:24:52,381 - INFO - Step 6 completed successfully
+2026-08-19 15:24:52,381 - INFO - Step 6 completed successfully
+2026-08-19 15:24:52,419 - INFO - HTML report generated: reports\test_navigation_report.html
+2026-08-19 15:24:52,419 - INFO - HTML report generated: reports\test_navigation_report.html
+2026-08-19 15:24:52,419 - INFO - Test case finished: test_navigation
+2026-08-19 15:24:52,419 - INFO - Test case finished: test_navigation

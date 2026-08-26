@@ -1,0 +1,72 @@
+2026-08-19 15:22:18,139 - INFO - Reading test case: tests/test_login.py
+2026-08-19 15:22:18,139 - INFO - Reading test case: tests/test_login.py
+2026-08-19 15:22:18,140 - INFO - Parsing Python source using AST
+2026-08-19 15:22:18,140 - INFO - Parsing Python source using AST
+2026-08-19 15:22:18,142 - INFO - JSON test case generated: output\test_login.json
+2026-08-19 15:22:18,142 - INFO - JSON test case generated: output\test_login.json
+2026-08-19 15:22:18,142 - INFO - Starting test case: test_login
+2026-08-19 15:22:18,142 - INFO - Starting test case: test_login
+2026-08-19 15:22:18,778 - INFO - Executing step 1: open_browser
+2026-08-19 15:22:18,778 - INFO - Executing step 1: open_browser
+2026-08-19 15:22:22,254 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:22:22,254 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:22:22,254 - INFO - Step 1 completed successfully
+2026-08-19 15:22:22,254 - INFO - Step 1 completed successfully
+2026-08-19 15:22:22,254 - INFO - Executing step 2: navigate
+2026-08-19 15:22:22,254 - INFO - Executing step 2: navigate
+2026-08-19 15:22:22,254 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:22:22,254 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:22:30,953 - INFO - Step 2 completed successfully
+2026-08-19 15:22:30,953 - INFO - Step 2 completed successfully
+2026-08-19 15:22:30,953 - INFO - Executing step 3: find_element
+2026-08-19 15:22:30,953 - INFO - Executing step 3: find_element
+2026-08-19 15:22:30,953 - INFO - Resolving 'username' -> '#username'
+2026-08-19 15:22:30,953 - INFO - Resolving 'username' -> '#username'
+2026-08-19 15:22:30,954 - INFO - Step 3 completed successfully
+2026-08-19 15:22:30,954 - INFO - Step 3 completed successfully
+2026-08-19 15:22:30,954 - INFO - Executing step 4: fill
+2026-08-19 15:22:30,954 - INFO - Executing step 4: fill
+2026-08-19 15:22:30,954 - INFO - Filling element 'username' with 'tomsmith'
+2026-08-19 15:22:30,954 - INFO - Filling element 'username' with 'tomsmith'
+2026-08-19 15:22:32,627 - INFO - Step 4 completed successfully
+2026-08-19 15:22:32,627 - INFO - Step 4 completed successfully
+2026-08-19 15:22:32,627 - INFO - Executing step 5: find_element
+2026-08-19 15:22:32,627 - INFO - Executing step 5: find_element
+2026-08-19 15:22:32,627 - INFO - Resolving 'password' -> '#password'
+2026-08-19 15:22:32,627 - INFO - Resolving 'password' -> '#password'
+2026-08-19 15:22:32,627 - INFO - Step 5 completed successfully
+2026-08-19 15:22:32,627 - INFO - Step 5 completed successfully
+2026-08-19 15:22:32,627 - INFO - Executing step 6: fill
+2026-08-19 15:22:32,627 - INFO - Executing step 6: fill
+2026-08-19 15:22:32,628 - INFO - Filling element 'password' with 'SuperSecretPassword!'
+2026-08-19 15:22:32,628 - INFO - Filling element 'password' with 'SuperSecretPassword!'
+2026-08-19 15:22:32,698 - INFO - Step 6 completed successfully
+2026-08-19 15:22:32,698 - INFO - Step 6 completed successfully
+2026-08-19 15:22:32,698 - INFO - Executing step 7: find_element
+2026-08-19 15:22:32,698 - INFO - Executing step 7: find_element
+2026-08-19 15:22:32,698 - INFO - Resolving 'login' -> 'button[type='submit']'
+2026-08-19 15:22:32,698 - INFO - Resolving 'login' -> 'button[type='submit']'
+2026-08-19 15:22:32,698 - INFO - Step 7 completed successfully
+2026-08-19 15:22:32,698 - INFO - Step 7 completed successfully
+2026-08-19 15:22:32,699 - INFO - Executing step 8: click
+2026-08-19 15:22:32,699 - INFO - Executing step 8: click
+2026-08-19 15:22:32,699 - INFO - Clicking element '__element_1'
+2026-08-19 15:22:32,699 - INFO - Clicking element '__element_1'
+2026-08-19 15:22:33,676 - INFO - Step 8 completed successfully
+2026-08-19 15:22:33,676 - INFO - Step 8 completed successfully
+2026-08-19 15:22:33,676 - INFO - Executing step 9: wait
+2026-08-19 15:22:33,676 - INFO - Executing step 9: wait
+2026-08-19 15:22:33,676 - INFO - Waiting 2000 ms
+2026-08-19 15:22:33,676 - INFO - Waiting 2000 ms
+2026-08-19 15:22:35,696 - INFO - Step 9 completed successfully
+2026-08-19 15:22:35,696 - INFO - Step 9 completed successfully
+2026-08-19 15:22:35,696 - INFO - Executing step 10: close_browser
+2026-08-19 15:22:35,696 - INFO - Executing step 10: close_browser
+2026-08-19 15:22:35,697 - INFO - Closing browser
+2026-08-19 15:22:35,697 - INFO - Closing browser
+2026-08-19 15:22:36,362 - INFO - Step 10 completed successfully
+2026-08-19 15:22:36,362 - INFO - Step 10 completed successfully
+2026-08-19 15:22:36,408 - INFO - HTML report generated: reports\test_login_report.html
+2026-08-19 15:22:36,408 - INFO - HTML report generated: reports\test_login_report.html
+2026-08-19 15:22:36,408 - INFO - Test case finished: test_login
+2026-08-19 15:22:36,408 - INFO - Test case finished: test_login

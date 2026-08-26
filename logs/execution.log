@@ -1,0 +1,35 @@
+2026-08-19 15:14:49,138 - INFO - Reading test case: test_case.py
+2026-08-19 15:14:49,138 - INFO - Parsing Python source using AST
+2026-08-19 15:14:49,142 - INFO - JSON test case generated: output\test_case.json
+2026-08-19 15:14:49,142 - INFO - Starting test case: test_case
+2026-08-19 15:14:49,638 - INFO - Executing step 1: open_browser
+2026-08-19 15:14:53,309 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:14:53,309 - INFO - Step 1 completed successfully
+2026-08-19 15:14:53,309 - INFO - Executing step 2: navigate
+2026-08-19 15:14:53,310 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:14:58,149 - INFO - Step 2 completed successfully
+2026-08-19 15:14:58,150 - INFO - Executing step 3: find_element
+2026-08-19 15:14:58,150 - INFO - Resolving 'username' -> '#username'
+2026-08-19 15:14:58,150 - INFO - Step 3 completed successfully
+2026-08-19 15:14:58,151 - INFO - Executing step 4: fill
+2026-08-19 15:14:58,151 - INFO - Filling element 'username'
+2026-08-19 15:14:58,394 - INFO - Step 4 completed successfully
+2026-08-19 15:14:58,442 - INFO - Executing step 5: find_element
+2026-08-19 15:14:58,456 - INFO - Resolving 'password' -> '#password'
+2026-08-19 15:14:58,458 - INFO - Step 5 completed successfully
+2026-08-19 15:14:58,461 - INFO - Executing step 6: fill
+2026-08-19 15:14:58,463 - INFO - Filling element 'password'
+2026-08-19 15:14:58,489 - INFO - Step 6 completed successfully
+2026-08-19 15:14:58,508 - INFO - Executing step 7: find_element
+2026-08-19 15:14:58,510 - INFO - Resolving 'login' -> 'button[type='submit']'
+2026-08-19 15:14:58,510 - INFO - Step 7 completed successfully
+2026-08-19 15:14:58,510 - INFO - Executing step 8: click
+2026-08-19 15:14:58,511 - INFO - Clicking element '__element_1'
+2026-08-19 15:14:59,440 - INFO - Step 8 completed successfully
+2026-08-19 15:14:59,440 - INFO - Executing step 9: wait
+2026-08-19 15:14:59,440 - INFO - Waiting 2000 ms
+2026-08-19 15:15:01,450 - INFO - Step 9 completed successfully
+2026-08-19 15:15:01,451 - INFO - Executing step 10: close_browser
+2026-08-19 15:15:01,451 - INFO - Closing browser
+2026-08-19 15:15:02,568 - INFO - Step 10 completed successfully
+2026-08-19 15:15:02,620 - INFO - Test case finished: test_case

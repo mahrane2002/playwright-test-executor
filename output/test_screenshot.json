@@ -1,0 +1,23 @@
+{
+    "name": "test_screenshot",
+    "steps": [
+        {
+            "action": "open_browser",
+            "variable": "browser"
+        },
+        {
+            "action": "navigate",
+            "browser": "browser",
+            "url": "https://the-internet.herokuapp.com/login"
+        },
+        {
+            "action": "screenshot",
+            "browser": "browser",
+            "name": "login_page"
+        },
+        {
+            "action": "close_browser",
+            "browser": "browser"
+        }
+    ]
+}

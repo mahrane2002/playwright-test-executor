@@ -1,0 +1,31 @@
+{
+    "name": "test_navigation",
+    "steps": [
+        {
+            "action": "open_browser",
+            "variable": "browser"
+        },
+        {
+            "action": "navigate",
+            "browser": "browser",
+            "url": "https://example.com"
+        },
+        {
+            "action": "wait",
+            "duration": 1000
+        },
+        {
+            "action": "navigate",
+            "browser": "browser",
+            "url": "https://the-internet.herokuapp.com"
+        },
+        {
+            "action": "wait",
+            "duration": 1000
+        },
+        {
+            "action": "close_browser",
+            "browser": "browser"
+        }
+    ]
+}

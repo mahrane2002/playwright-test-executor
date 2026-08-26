@@ -1,0 +1,72 @@
+2026-08-19 15:22:42,771 - INFO - Reading test case: tests/test_screenshot.py
+2026-08-19 15:22:42,771 - INFO - Reading test case: tests/test_screenshot.py
+2026-08-19 15:22:42,772 - INFO - Parsing Python source using AST
+2026-08-19 15:22:42,772 - INFO - Parsing Python source using AST
+2026-08-19 15:22:42,775 - INFO - JSON test case generated: output\test_screenshot.json
+2026-08-19 15:22:42,775 - INFO - JSON test case generated: output\test_screenshot.json
+2026-08-19 15:22:42,775 - INFO - Starting test case: test_screenshot
+2026-08-19 15:22:42,775 - INFO - Starting test case: test_screenshot
+2026-08-19 15:22:43,352 - INFO - Executing step 1: open_browser
+2026-08-19 15:22:43,352 - INFO - Executing step 1: open_browser
+2026-08-19 15:22:47,200 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:22:47,200 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:22:47,201 - INFO - Step 1 completed successfully
+2026-08-19 15:22:47,201 - INFO - Step 1 completed successfully
+2026-08-19 15:22:47,201 - INFO - Executing step 2: navigate
+2026-08-19 15:22:47,201 - INFO - Executing step 2: navigate
+2026-08-19 15:22:47,201 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:22:47,201 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:22:57,389 - INFO - Step 2 completed successfully
+2026-08-19 15:22:57,389 - INFO - Step 2 completed successfully
+2026-08-19 15:22:57,390 - INFO - Executing step 3: screenshot
+2026-08-19 15:22:57,390 - INFO - Executing step 3: screenshot
+2026-08-19 15:22:57,390 - INFO - Saving screenshot: screenshots\login_page.png
+2026-08-19 15:22:57,390 - INFO - Saving screenshot: screenshots\login_page.png
+2026-08-19 15:22:58,090 - INFO - Step 3 completed successfully
+2026-08-19 15:22:58,090 - INFO - Step 3 completed successfully
+2026-08-19 15:22:58,090 - INFO - Executing step 4: close_browser
+2026-08-19 15:22:58,090 - INFO - Executing step 4: close_browser
+2026-08-19 15:22:58,090 - INFO - Closing browser
+2026-08-19 15:22:58,090 - INFO - Closing browser
+2026-08-19 15:22:58,645 - INFO - Step 4 completed successfully
+2026-08-19 15:22:58,645 - INFO - Step 4 completed successfully
+2026-08-19 15:22:58,676 - INFO - HTML report generated: reports\test_screenshot_report.html
+2026-08-19 15:22:58,676 - INFO - HTML report generated: reports\test_screenshot_report.html
+2026-08-19 15:22:58,676 - INFO - Test case finished: test_screenshot
+2026-08-19 15:22:58,676 - INFO - Test case finished: test_screenshot
+2026-08-19 15:31:38,948 - INFO - Reading test case: tests/test_screenshot.py
+2026-08-19 15:31:38,948 - INFO - Reading test case: tests/test_screenshot.py
+2026-08-19 15:31:38,950 - INFO - Parsing Python source using AST
+2026-08-19 15:31:38,950 - INFO - Parsing Python source using AST
+2026-08-19 15:31:38,952 - INFO - JSON test case generated: output\test_screenshot.json
+2026-08-19 15:31:38,952 - INFO - JSON test case generated: output\test_screenshot.json
+2026-08-19 15:31:38,953 - INFO - Starting test case: test_screenshot
+2026-08-19 15:31:38,953 - INFO - Starting test case: test_screenshot
+2026-08-19 15:31:39,817 - INFO - Executing step 1: open_browser
+2026-08-19 15:31:39,817 - INFO - Executing step 1: open_browser
+2026-08-19 15:31:53,873 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:31:53,873 - INFO - Browser opened and stored as 'browser'
+2026-08-19 15:31:53,877 - INFO - Step 1 completed successfully
+2026-08-19 15:31:53,877 - INFO - Step 1 completed successfully
+2026-08-19 15:31:53,878 - INFO - Executing step 2: navigate
+2026-08-19 15:31:53,878 - INFO - Executing step 2: navigate
+2026-08-19 15:31:53,900 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:31:53,900 - INFO - Navigating to https://the-internet.herokuapp.com/login
+2026-08-19 15:32:05,343 - INFO - Step 2 completed successfully
+2026-08-19 15:32:05,343 - INFO - Step 2 completed successfully
+2026-08-19 15:32:05,343 - INFO - Executing step 3: screenshot
+2026-08-19 15:32:05,343 - INFO - Executing step 3: screenshot
+2026-08-19 15:32:05,344 - INFO - Saving screenshot: screenshots\login_page.png
+2026-08-19 15:32:05,344 - INFO - Saving screenshot: screenshots\login_page.png
+2026-08-19 15:32:07,957 - INFO - Step 3 completed successfully
+2026-08-19 15:32:07,957 - INFO - Step 3 completed successfully
+2026-08-19 15:32:07,960 - INFO - Executing step 4: close_browser
+2026-08-19 15:32:07,960 - INFO - Executing step 4: close_browser
+2026-08-19 15:32:07,964 - INFO - Closing browser
+2026-08-19 15:32:07,964 - INFO - Closing browser
+2026-08-19 15:32:14,545 - INFO - Step 4 completed successfully
+2026-08-19 15:32:14,545 - INFO - Step 4 completed successfully
+2026-08-19 15:32:15,391 - INFO - HTML report generated: reports\test_screenshot_report.html
+2026-08-19 15:32:15,391 - INFO - HTML report generated: reports\test_screenshot_report.html
+2026-08-19 15:32:15,524 - INFO - Test case finished: test_screenshot
+2026-08-19 15:32:15,524 - INFO - Test case finished: test_screenshot
