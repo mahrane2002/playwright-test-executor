@@ -12,7 +12,7 @@ from object_repository import OBJECT_REPOSITORY
 
 # ============================================================
 # Directories Configuration
-# ============================================================
+
 
 OUTPUT_DIR = Path("output")
 LOG_DIR = Path("logs")
@@ -33,34 +33,44 @@ logger = logging.getLogger("executor")
 
 def setup_logging(test_case_name):
     """
-    Set up logging dynamically for each test case.
-    Logs are written to logs/{test_case_name}.log.
+    Configure logging for a test case.
+
+    Logs are written to logs/{test_case_name}.log
+    and displayed in the console.
     """
     log_file = LOG_DIR / f"{test_case_name}.log"
-    
-    # Reset logger handlers
-    root_logger = logging.getLogger()
-    for handler in list(root_logger.handlers):
-        root_logger.removeHandler(handler)
-        
-    for handler in list(logger.handlers):
-        logger.removeHandler(handler)
 
     logger.setLevel(logging.INFO)
-    
-    file_handler = logging.FileHandler(log_file, encoding="utf-8")
-    file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
-    
+    logger.propagate = False
+
+    # Remove existing handlers
+    for handler in list(logger.handlers):
+        handler.close()
+        logger.removeHandler(handler)
+
+    # File handler
+    file_handler = logging.FileHandler(
+        log_file,
+        encoding="utf-8"
+    )
+
+    file_handler.setFormatter(
+        logging.Formatter(
+            "%(asctime)s - %(levelname)s - %(message)s"
+        )
+    )
+
+    # Console handler
     stream_handler = logging.StreamHandler()
-    stream_handler.setFormatter(logging.Formatter("%(levelname)s - %(message)s"))
-    
+
+    stream_handler.setFormatter(
+        logging.Formatter(
+            "%(levelname)s - %(message)s"
+        )
+    )
+
     logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
-    
-    # Also attach to root logger to capture library logs if needed
-    root_logger.setLevel(logging.INFO)
-    root_logger.addHandler(file_handler)
-    root_logger.addHandler(stream_handler)
 
 
 # ============================================================
@@ -168,7 +178,7 @@ class TestCaseParser:
                 raise ValueError("navigate(browser, url) requires 2 arguments.")
 
             browser = self._parse_name(node.args[0])
-            url = self._parse_constant(node.args[1])
+            url = self._parse_string(node.args[1], "URL")
 
             self.steps.append({
                 "action": "navigate",
@@ -182,7 +192,10 @@ class TestCaseParser:
                 raise ValueError("find_element(browser, locator) requires 2 arguments.")
 
             browser = self._parse_name(node.args[0])
-            locator = self._parse_constant(node.args[1])
+            locator = self._parse_string(
+                 node.args[1],
+                 "locator"
+            )
 
             if assigned_variable is None:
                 assigned_variable = self._create_temp_variable()
@@ -238,7 +251,10 @@ class TestCaseParser:
             if len(node.args) != 1:
                 raise ValueError("wait(duration) requires 1 argument.")
 
-            duration = self._parse_constant(node.args[0])
+            duration = self._parse_number(
+                node.args[0],
+                "duration"
+            )
 
             self.steps.append({
                 "action": "wait",
@@ -251,7 +267,10 @@ class TestCaseParser:
                 raise ValueError("screenshot(browser, name) requires 2 arguments.")
 
             browser = self._parse_name(node.args[0])
-            name = self._parse_constant(node.args[1])
+            name = self._parse_string(
+               node.args[1],
+               "screenshot name"
+            )
 
             self.steps.append({
                 "action": "screenshot",
@@ -284,8 +303,32 @@ class TestCaseParser:
     def _create_temp_variable(self):
         self.temp_counter += 1
         return f"__element_{self.temp_counter}"
+    
+    def _parse_string(self, node, argument_name):
+        value = self._parse_constant(node)
+
+        if not isinstance(value, str):
+            raise ValueError(
+                f"{argument_name} must be a string."
+            )
+
+        return value
 
 
+def _parse_number(self, node, argument_name):
+    value = self._parse_constant(node)
+
+    if not isinstance(value, (int, float)):
+        raise ValueError(
+            f"{argument_name} must be a number."
+        )
+
+    if value < 0:
+        raise ValueError(
+            f"{argument_name} must be greater than or equal to 0."
+        )
+
+    return value
 # ============================================================
 # JSON generation
 # ============================================================
