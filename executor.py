@@ -12,6 +12,7 @@ from object_repository import OBJECT_REPOSITORY
 
 # ============================================================
 # Directories Configuration
+# -----------------------------------------------------------
 
 OUTPUT_DIR = Path("output")
 LOG_DIR = Path("logs")
