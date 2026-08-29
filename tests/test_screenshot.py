@@ -1,14 +1,10 @@
-from actions import (
-    open_browser,
-    navigate,
-    screenshot,
-    close_browser,
-)
+from playwright_executor.parser import generate_json
+from playwright_executor.executor import PlaywrightExecutor
+from playwright_executor.logger import setup_logging
 
-browser = open_browser()
-
-navigate(browser, "https://the-internet.herokuapp.com/login")
-
-screenshot(browser, "login_page")
-
-close_browser(browser)
+def test_screenshot_functional():
+    setup_logging("test_screenshot")
+    test_case = generate_json("test_cases/screenshot.py")
+    executor = PlaywrightExecutor(test_case)
+    executor.execute()
+    assert executor.status == "PASSED"

@@ -1,25 +1,10 @@
-from actions import (
-    open_browser,
-    navigate,
-    find_element,
-    click,
-    fill,
-    wait,
-    close_browser,
-)
+from playwright_executor.parser import generate_json
+from playwright_executor.executor import PlaywrightExecutor
+from playwright_executor.logger import setup_logging
 
-browser = open_browser()
-
-navigate(browser, "https://the-internet.herokuapp.com/login")
-
-username = find_element(browser, "username")
-fill(username, "tomsmith")
-
-password = find_element(browser, "password")
-fill(password, "SuperSecretPassword!")
-
-click(find_element(browser, "login"))
-
-wait(2000)
-
-close_browser(browser)
+def test_login_functional():
+    setup_logging("test_login")
+    test_case = generate_json("test_cases/login.py")
+    executor = PlaywrightExecutor(test_case)
+    executor.execute()
+    assert executor.status == "PASSED"

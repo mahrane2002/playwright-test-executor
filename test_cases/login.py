@@ -1,4 +1,4 @@
-from actions import (
+from playwright_executor.actions import (
     open_browser,
     navigate,
     find_element,
@@ -7,7 +7,6 @@ from actions import (
     wait,
     close_browser,
 )
-
 
 browser = open_browser()
 

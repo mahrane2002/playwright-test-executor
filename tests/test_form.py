@@ -1,22 +1,10 @@
-from actions import (
-    open_browser,
-    navigate,
-    find_element,
-    fill,
-    click,
-    wait,
-    close_browser,
-)
+from playwright_executor.parser import generate_json
+from playwright_executor.executor import PlaywrightExecutor
+from playwright_executor.logger import setup_logging
 
-browser = open_browser()
-
-navigate(browser, "https://the-internet.herokuapp.com/forgot_password")
-
-email = find_element(browser, "email")
-fill(email, "test@example.com")
-
-click(find_element(browser, "retrieve_password"))
-
-wait(2000)
-
-close_browser(browser)
+def test_form_functional():
+    setup_logging("test_form")
+    test_case = generate_json("test_cases/form.py")
+    executor = PlaywrightExecutor(test_case)
+    executor.execute()
+    assert executor.status == "PASSED"

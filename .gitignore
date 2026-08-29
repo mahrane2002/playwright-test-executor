@@ -1,26 +1,28 @@
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Generated files
-logs/
-output/
-reports/
-screenshots/
+# Pytest cache
+.pytest_cache/
 
-# IDE
+# IDE files
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Environment variables
-.env
+# Dynamic runtime outputs (ignore contents but keep directory via .gitkeep)
+output/*
+!output/.gitkeep
+reports/*
+!reports/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+logs/*
+!logs/.gitkeep

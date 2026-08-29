@@ -1,4 +1,4 @@
-from actions import (
+from playwright_executor.actions import (
     open_browser,
     navigate,
     wait,
@@ -7,8 +7,12 @@ from actions import (
 
 browser = open_browser()
 
+navigate(browser, "https://example.com")
+
+wait(1000)
+
 navigate(browser, "https://the-internet.herokuapp.com")
 
-wait(1500)
+wait(1000)
 
 close_browser(browser)
