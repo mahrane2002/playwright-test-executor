@@ -541,34 +541,34 @@ class PlaywrightExecutor:
         logger.info("Waiting %s ms", duration)
         self.page.wait_for_timeout(duration)
 
-def screenshot(self, step):
-    if self.page is None:
-        raise RuntimeError(
-            "Cannot take screenshot: browser is not open."
+    def screenshot(self, step):
+        if self.page is None:
+            raise RuntimeError(
+                "Cannot take screenshot: browser is not open."
+            )
+
+        name = step["name"]
+
+        screenshot_path = (
+            SCREENSHOT_DIR / f"{name}.png"
         )
 
-    name = step["name"]
+        logger.info(
+            "Saving screenshot: %s",
+            screenshot_path
+        )
 
-    screenshot_path = (
-        SCREENSHOT_DIR / f"{name}.png"
-    )
+        self.page.screenshot(
+            path=str(screenshot_path)
+        )
 
-    logger.info(
-        "Saving screenshot: %s",
-        screenshot_path
-    )
+    def close_browser(self, step):
+        logger.info("Closing browser")
 
-    self.page.screenshot(
-        path=str(screenshot_path)
-    )
-
-def close_browser(self, step):
-    logger.info("Closing browser")
-
-    if self.browser is not None:
-        self.browser.close()
-        self.browser = None
-        self.page = None
+        if self.browser is not None:
+            self.browser.close()
+            self.browser = None
+            self.page = None
 
     def _get_variable(self, variable_name):
         if variable_name not in self.variables:
